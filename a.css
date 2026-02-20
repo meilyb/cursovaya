@@ -1,0 +1,45 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.base {
+    width: 100%;   
+    height: 1000px;
+     background-color: rgb(224, 221, 219);
+
+}
+.up{
+    width: 100%;
+    height: 100px;
+background-color: rgb(199, 182, 181);
+display: flex;
+justify-content: space-between;  
+
+}
+span{
+        display: block;
+    border: 1px solid rgb(145, 127, 136);
+    width: 30px;
+    margin-bottom: 10px;
+
+}
+.lines  {
+margin-left: 20px;
+ padding-top: 30px;
+}
+.name  {
+     padding-top: 30px;
+        font-size: 22px;
+        color: rgb(145, 127, 136);
+}
+.reg{
+    margin-top: 30px;
+     height: 30px;
+     width: 150px;
+         margin-left: 20px;
+         background-color: rgb(145, 127, 136);
+         border: none;
+         border-radius: 20px;
+         font-size: 17px;
+         color: rgb(224, 221, 219);
+}
