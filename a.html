@@ -5,19 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./a.css">
+       <script defer src="./a.js" ></script>
 </head>
 <body>
     <div class="base">
 
 
-<div class="up">   
-    <div class="lines">
+<div class="up">
+    <div class="dropdown"> 
+        <div class="lines" onclick="drop()">
         <span></span>
         <span></span>
         <span></span>
     </div>
-    <div class="name">CLOTHE SHOP</div>
-    <button class="reg" onclick="tap">sign up</button>
+  <div id="myDropdown" class="dropdown-content">
+<div class="list">woman</div>
+<div class="list">man</div> 
+<div class="list">kids</div>
+<div class="list">accsesories</div>
+  </div>
+  
+   
+</div> 
+    <div class="name">
+    <div class="div1">C L O T H E S H O P &nbsp;&nbsp; &nbsp; &nbsp;   C L O T H E S H O P&nbsp;&nbsp; &nbsp; &nbsp; C L O T H E S H O P &nbsp;&nbsp; &nbsp; &nbsp;   C L O T H E S H O P&nbsp;&nbsp; &nbsp; &nbsp;   C L O T H E S H O P</div>
+   
+    </div>
+    <button class="reg" data-modal="test1-modal">sign up</button>
+    <div class="modal" id="test1-modal">
+        <div class="window">
+            <form name="login" class="form">
+            <div class="cross" data-close="test1-modal">	&#10006;</div>
+              <div class="label">your login:</div>
+            <input type="email" name="Login"  />
+            <div class="label">your email:</div>
+            <input type="email" name="emaill"  />
+            <div class="label">your password:</div>
+            <input type="password" name="pass"  />
+            <button onclick="check()">sign up</button>
+        </form>
+        </div>
+    </div>
  
 </div>
 <div class="body"></div>
@@ -28,5 +56,7 @@
 
 
     </div>
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script  src="./a.js" ></script>
 </body>
 </html>

@@ -26,20 +26,128 @@ span{
 .lines  {
 margin-left: 20px;
  padding-top: 30px;
+ cursor: pointer;
 }
 .name  {
      padding-top: 30px;
-        font-size: 22px;
-        color: rgb(145, 127, 136);
+        font-size: 25px;
+         width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+    .div1 {
+   display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+  color:rgb(145, 127, 136) ;
+  font-weight: bold;
+  font-style: italic;
+    }
+@keyframes marquee {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
 }
 .reg{
     margin-top: 30px;
      height: 30px;
      width: 150px;
-         margin-left: 20px;
+         margin-right: 20px;
          background-color: rgb(145, 127, 136);
          border: none;
          border-radius: 20px;
          font-size: 17px;
          color: rgb(224, 221, 219);
+}
+.reg:hover{
+          background-color:rgb(113, 101, 107);
+          cursor: pointer;
+}
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+z-index: -1;
+opacity:0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease-in;
+}
+.modal.active{
+      
+    z-index: 999;
+    opacity: 1;
+
+}
+.window{
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position:relative ;
+   
+
+}
+.label{
+    color: rgb(131, 104,113);
+}
+.cross{
+position: absolute;
+right: 12px;
+top: 2px;
+color: rgb(163, 126, 132);
+cursor: pointer;
+}
+.form{
+    display: flex;
+flex-direction: column;
+}
+.window button{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+     background-color: rgb(145, 127, 136);
+         border: none;
+         border-radius: 20px;
+         font-size: 17px;
+         color: rgb(224, 221, 219);
+}
+.window button:hover{
+          background-color:rgb(113, 101, 107);
+          cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(145, 127, 136);
+    width: 200px;
+    height: 300px;
+  z-index: 1;
+}
+.list{
+color: rgb(224, 221, 219);
+    font-size: 24px;
+        padding: 23px 18px;
+}
+.list:hover{
+      background-color:rgb(113, 101, 107);
+      cursor: pointer;
+}
+.show {
+    display:block;
 }
